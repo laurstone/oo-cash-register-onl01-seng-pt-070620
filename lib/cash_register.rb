@@ -16,6 +16,7 @@ class CashRegister
     @price = price
     @total += price * quantity 
     @last_transaction = price
+    quantity.times {@items << item}
     if quantity > 1
       counter = 0
       while counter < quantity
