@@ -26,7 +26,7 @@ class CashRegister
   end
   
   def void_last_transaction
-    binding.pry
+    #binding.pry
     self.total = self.total - self.last_transaction
     self.total
   end
